@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes </title>
+    <style>
+    div { 
+        display: inline-block;
+        border: solid black;
+        background-color: rgb(165, 165, 165);
+        text-align: center;
+        height: 200px;
+        width: 200px;
+    }
+    div:hover {
+        background-color: blue;
+    }
+    div > p {
+        display: none;
+    }
+    div:hover > p {
+        display: block;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div>#1</div>
+    <div>#2</div>
+    <div>#3
+        <p>Texto ocultos</p>
+    </div>
+</body>
+</html>
