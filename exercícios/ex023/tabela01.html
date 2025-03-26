@@ -10,31 +10,89 @@
         }
         table{
             border-collapse: collapse;
-            width: 400px;
+            width: 600px;
         }
-        td{
-        border: 1px solid black;
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tbody th{
+            text-align: left;
+        }
+        thead, tfoot{
+            background-color: rgb(77, 77, 77);
+            color: white;
+            
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+            background-color: lightgray;
+            font-size: 2em;
+            width: 600px;
+            text-align: center;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        tbody tr:nth-child(odd){
+        background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <table class="tabela">
+        <caption>
+            População por unidade da federação
+        </caption>
+        <thead>
         <tr>
-            <td>A1</td>
-            <td>A2</td>
-            <td>A3</td>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <th>São Paulo</th>
+            <td class="num">45.919.049</td>
         </tr>
         <tr>
-            <td>B1</td>
-            <td>B2</td>
-            <td>B3</td>
+            <th>Minas Gerais</th>
+            <td class="num">21.168.791</td>
         </tr>
         <tr>
-            <td>C1</td>
-            <td>C2</td>
-            <td>C3</td>
+            <th>Rio de Janeiro</th>
+            <td class="num">17.264.943</td>
         </tr>
+        <tr>
+            <th>Bahia</th>
+            <td class="num">14.873.064</td>
+        </tr>
+        <tr>
+            <th>Paraná</th>
+            <td class="num">11.824.665</td>
+        </tr>
+        <tr>
+            <th>Rio Grande do Sul</th>
+            <td class="num">11.229.915</td>
+        </tr>
+        <tr>
+            <th> Pernambuco</th>
+            <td class="num">9.539.026</td>
+        </tr>
+        <tr>
+            <th>Ceará</th>
+            <td class="num">9.233.656</td>
+        </tr>
+    </tbody>
+        <tfoot>
+        <tr>
+            <th><strong>Total de habitantes</strong></th>
+            <td class="num">212 583 750</td>
+        </tr>
+        </tfoot>
     </table>
 </body>
 </html>
