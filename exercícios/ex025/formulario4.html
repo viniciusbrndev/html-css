@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Utilizando fieldset, legend, radio e checkbox</h1>
+    <form action="dados.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="imasc"> <br>
+            <label for="ifem">Feminino</label>
+            <input type="radio" name="sexo" id="ifem"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Esporte favorito</legend>
+            <label for="ifut">Futebol</label>
+            <input type="checkbox" name="fut" id="ifut"> <br>
+            <label for="ibas">Baquete</label>
+            <input type="checkbox" name="bas" id="ibas"> <br>
+            <label for="ivol">Vôlei</label>
+            <input type="checkbox" name="vol" id="ivol"> <br>
+            <label for="ibai">Baisebol</label>
+            <input type="checkbox" name="bai" id="ibai"> <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    
+    </form>
+</body>
+</html>
