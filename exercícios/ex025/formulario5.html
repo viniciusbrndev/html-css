@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de fomulários</h1>
+    <form action="dados.php" method="post">
+        <fieldset>
+            <legend>Teste</legend>
+            <p>
+                <label for="icor">Escolha sua Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <abbr title="Escolha quão satisfeito está de 1 a 5">
+                <p>
+                    <label for="isat">Nível  de satisfação</label>
+                    <input type="range" name="sat" id="isat" placeholder="De 1 a 5" min="1" max="5" value="5">
+                </p>
+            </abbr>
+            <p>
+                <label for="iimg">Envie uma imagem</label>
+                <input type="file" name="img" id="iimg">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Select e optgroup</legend>
+            <p> <!-- Usa <select> para criar listas de seleção como o exemplo abaixo-->
+                <label for="ies">Estados:</label>
+                <select name="est" id="ies">
+                    <optgroup label="Nordeste"> <!--O <optgroup> é usado para agrupar opções em seções-->
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p> <!-- O <datalist> é usado para criar lista de opção com a função de digitar acrescida-->
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="iprof">
+                    <datalist id="iprof">
+                        <option>Mecânico</option>
+                        <option>Pedreiro</option>
+                        <option>Desenvolvedor</option>
+                        <option>Professor</option>
+                    </datalist>
+            </p>
+            <p>
+                <label for="itxt">Mensagem:</label><br>
+                <textarea name="txt" id="itxt" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
